@@ -32,6 +32,10 @@
     { name = "lang#kotlin"; }
     { name = "lang#sh"; }
     { name = "lang#html"; }
+    { name = "lang#python";
+    enabled_clients = ["pylsp"];
+    enabled_linters = ["python" "pylint"];
+    enable_typeinfo = true;}
   ];
   options = {
     buffer_index_type = 4;
@@ -44,3 +48,4 @@
     timeoutlen = 500;
   };
 }
+
